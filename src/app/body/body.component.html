@@ -1,0 +1,12 @@
+<div class="body-content">
+  <button (click)="handleButtonClick()">De quem é a Pale?</button>
+  <br>
+  <br>
+  <img *ngIf="buttonIsClicked"
+    [src]="searchImageUrl" alt="Goncale Image" class="body-content">
+
+  <div class="palemeter" *ngIf="buttonIsClicked">
+    <h2>{{ playerMessage }}</h2>
+    <p class="total-count">{{ totalPaleCounter }}</p>
+  </div>
+</div>
