@@ -25,13 +25,16 @@ export class BodyComponent implements OnInit {
     this.changeUrl();
     this.printTotalPale();
   }
+
   changeUrl() {
     this.paleHolder();
-    this.searchImageUrl = 'assets/images/' + this.randomNumber + '.jpg';
-
+    //this.searchImageUrl = 'assets/images/' + this.randomNumber + '.jpg';
+    this.searchImageUrl = 'https://png.pngtree.com/png-vector/20191121/ourmid/pngtree-blue-bird-vector-or-color-illustration-png-image_2013004.jpg';
+    
     this.buildMessage(this.randomNumber);
     this.individualPaleCounter(this.randomNumber);
   }
+  
   individualPaleCounter(number: number) {
     switch (number) {
       case 1:
@@ -51,9 +54,11 @@ export class BodyComponent implements OnInit {
         return
     }
   }
+
   paleHolder() {
-    this.randomNumber = this.codeResolver(Math.floor(Math.random() * 10) + 1);
+    this.randomNumber = this.codeResolver(Math.floor(Math.random() * 6) + 1);
   }
+
   codeResolver(number: number): number{
     if ( number % 2 == 0 ) {
       return 1;
@@ -67,6 +72,7 @@ export class BodyComponent implements OnInit {
       return 1;
     }
   }
+
   buildMessage(number: number) {
     switch (number) {
       case 1:
@@ -86,6 +92,7 @@ export class BodyComponent implements OnInit {
         return
     }
   }
+
   printTotalPale() {
     this.totalPaleCounter = 'Pale King Gonçale pale counter: ' + this.goncaloPaleCounter +
                             ' ||| Diag pale counter: ' + this.diogoPaleCounter +
