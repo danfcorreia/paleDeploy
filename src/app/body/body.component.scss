@@ -1,0 +1,55 @@
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; /* Adjust this value as needed */
+}
+
+
+.body-content {
+  text-align: center;
+}
+.body-content img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.body-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: darkgreen; /* Green background */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition-duration: 0.4s; /* Smooth transition on hover */
+}
+
+.body-content button:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+.palemeter {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.palemeter h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.palemeter .total-count {
+  color: #666;
+  font-size: 30px; /* Aumentar o tamanho da fonte */
+  font-weight: bold; /* Tornar o texto mais proeminente */
+}
+
